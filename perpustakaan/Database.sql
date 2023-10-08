@@ -66,7 +66,6 @@ CREATE TABLE tb_pengguna(
      tb_anggota_id INT UNSIGNED,
      tb_koleksibuku_id INT UNSIGNED,
      denda DOUBLE,
-     `perpustakaan_19221185`
      FOREIGN KEY(tb_anggota_id)REFERENCES tb_anggota(id)ON UPDATE CASCADE,
      FOREIGN KEY(tb_pengguna_id_peminjaman)REFERENCES tb_pengguna(id) ON UPDATE CASCADE,
      FOREIGN KEY(tb_pengguna_id_pengembalian)REFERENCES tb_pengguna(id)ON UPDATE CASCADE,
